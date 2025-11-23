@@ -5,13 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+Html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #1F1F1F;
     background-color: #F5F7FA;
-    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -171,7 +173,7 @@ ul {
 
 .nav ul li a:hover, .nav ul li a.current-page {
     color: #00E5FF;
-    border-bottom: 3px solid #00E5FF;
+   
 }
 
 .menu-toggle {
@@ -472,6 +474,9 @@ ul {
 }
 
 .back-to-top {
+    position: absolute;
+    right: 10rem;
+    bottom: 7rem;
     font-size: 1.2rem;
     color: #ffffff;
     display: inline-block;
@@ -528,7 +533,7 @@ ul {
         position: fixed;
         top: 60px;
         right: 0;
-        width: 60%;
+        width: 100%;
         height: 100%;
         background-color: #161B22;
         transform: translateX(100%);
@@ -584,11 +589,11 @@ ul {
 @media (max-width: 576px) {
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .hero-section {
@@ -596,7 +601,7 @@ ul {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .hero-content p {
@@ -609,8 +614,15 @@ ul {
 
     .hero-btn {
         width: 90%;
+        height: 40px;
+        padding: 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
         margin: 5px auto;
+        font-size: .7rem;
     }
+    
 
     .cta h1 {
         font-size: 1.6rem;
@@ -619,5 +631,8 @@ ul {
     .whatsapp-float a {
         padding: 8px 15px;
         font-size: 1rem;
+    }
+    .back-to-top{
+        right: 2rem;
     }
 }

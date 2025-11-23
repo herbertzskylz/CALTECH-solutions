@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+Html{
+  scroll-behavior: smooth;
+}
 
 /* General Body */
 body {
@@ -27,6 +30,9 @@ img {
 
 /* Header Section */
 .contact-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
  background: rgb(5, 5, 63);
  min-height: 20vh;
 }
@@ -67,23 +73,14 @@ nav{
 
 .navLinks ul li a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
+    transition: 1s ease-in;
+    font-weight: 600;
 }
 
-.navLinks ul li::after{
-    content: '';
-    background: #ff4486;
-    width: 0%;
-    height: 2px;
-    display: block;
-    margin: auto;
-    transition: 1s;
-}
-
-.navLinks ul li:hover::after{
-    width: 100%;
-    text-align: center;
+.navLinks ul li a:hover{
+   color: aqua;
 }
 
 .fa-bars, .fa-times {
@@ -357,16 +354,16 @@ nav .fa{
     }
     .navLinks{
         height: 65vh;
-        width: 200px;
-        margin-top: 10px;
+        width: 100%;
+        margin-top: 6.67rem;
         line-height: 2.5;
         border-radius: 10px;
         position: fixed;
         top: 0;
         right: -200px;
-        background: #ea3131;
+        background: #0a0242;
         text-align: left;
-        z-index: 2;
+        z-index: 999;
         transition: 1s;
     }
     nav .fa{
