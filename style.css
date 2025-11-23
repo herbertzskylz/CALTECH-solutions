@@ -140,7 +140,7 @@ ul {
 /* --- 3. HEADER & NAVBAR (DARK) --- */
 
 .main-header {
-    background: #0D1117;
+    background: #1e2b3e;
     color: #00E5FF;
     display: flex;
     justify-content: space-between;
@@ -152,11 +152,15 @@ ul {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #00E5FF;
+.logo img {
+   width: 80px;
+    height: 80px;
+    border-radius: 20%;
     text-shadow: 1px 1px 1px #7B61FF;
+}
+.logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .nav ul {
