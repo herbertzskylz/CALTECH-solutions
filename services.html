@@ -10,29 +10,27 @@
 </head>
 <body>
 
-    <section class="sub-header" data-aos="fade-down">
-        <nav>
-            <div class="caltech">
-                <img src="images/LOG.png" height="100px" alt="Logo">
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-            <div class="navLinks" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about-us.html">ABOUT</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
-                </ul>
-            </div>
-            <div class="text-box">
-                <h3 data-aos="fade-right">OUR EXPERTISE</h3>
-                <h1 data-aos="fade-left">Discover Our Full Range of Solutions.</h1>
-                <p data-aos="fade-up">From stationery to complex engineering projects, we deliver quality you can trust.</p>
-            </div>
+   <header class="main-header">
+        <a href="index.html" class="logo"><img src="images/cal-logo.jpg" alt="logo"></a>
+        <a href="#" class="cal">CALTECH STAIONERS AND ENGINEERING SOLUTIONS</a>
+        </div>
+
+        <nav class="nav" id="navMenu">
+            <ul>
+                <li><a href="index.html" class="current-page">HOME</a></li>
+               <!-- <li><a href="about-us.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="testimonials.html">TESTIMONIALS</a></li>-->
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
         </nav>
-    </section>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
 
     <section class="services" data-aos="fade-up">
         <div class="services-container">
@@ -125,32 +123,46 @@
         </div>
     </section>
 
-    <section class="footer" data-aos="fade-up">
-        <div class="get-in-touch">
-            <p>Got Questions? <br> Contact Us.</p>
-            <ul>
-                <li><i class="fa fa-phone"></i> Tel: <br>+256790702669 / 761264781</li><br />
-                <li><i class="fa fa-envelope"></i> Email: <br> info@caltechsolutions.com</li><br />
-                <li><i class="fa fa-location-dot"></i> Address: <br> Nabilatuk - Moroto</li>
-            </ul>
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-grid">
+            <div class="footer-col logo-col">
+                <h3>CALTECH</h3>
+                <p>Innovating Supply. Powering Solutions. Your trusted partner for stationery and engineering services in the region.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="blog.html">Blog & News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa fa-phone"></i> +256 790 702 669</li>
+                    <li><i class="fa fa-phone"></i> +256 761 264 781</li>
+                    <li><i class="fa fa-envelope"></i> info@caltechsolutions.com</li>
+                    <li><i class="fa fa-location-dot"></i> Nabilatuk - Moroto, Uganda</li>
+                </ul>
+            </div>
+            <div class="footer-col social-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
-        <hr />
-        <p>&copy;2025 @herbertzskylz. All Rights Reserved</p>
-        <div class="icons">
-            <a href="https://www.facebook.com/herbertz.skylz.2025" target="_blank" aria-label="Follow us on Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/herbertz_skylz/" target="_blank" aria-label="Follow us on Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/256761264781?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20learn%20more." target="_blank" aria-label="Chat on WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank" aria-label="Connect with us on LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span>CaltechSolutions. All Rights Reserved</p>
+            <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>
         </div>
-    </section>
+    </footer>
 
     <script>
         var navLinks = document.getElementById("navLinks");
